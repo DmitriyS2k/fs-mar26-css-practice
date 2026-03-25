@@ -15,7 +15,7 @@
 	display: grid;
 	grid-template-columns: repeat(var(--columns-count), 200px);
 	gap: 0 30px;
-	padding-top: 30px;
+	padding-top: 20px;
 }
 
 @media (min-width: 1000px) {
@@ -37,17 +37,17 @@
 	flex-direction: column;
 	align-items: center;
 	border-radius: 12px;
-	padding: 10px;
 	position: relative;
 	transition: transform 0.3s ease;
 
 	&:hover {
 		background-color: #eeeeee;
-		transform: scale(1.2);
+		transform: scale(1.3);
 		z-index: 1;
 
 		.img-block__img {
 			border-radius: 60px;
+			transform: scale(0.95);
 		}
 
 		.text-block__add-info {
@@ -95,6 +95,7 @@
 	font-weight: 400;
 	font-size: 18px;
 	margin-top: 10.8px;
+	padding-bottom: 10px;
 }
 
 .add-info__sport::after {
